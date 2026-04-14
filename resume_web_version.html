@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Galeas | Resume</title>
+  <style>
+    :root {
+      --bg: #f3f5f7;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #52606d;
+      --accent: #0f766e;
+      --accent-soft: #dff6f3;
+      --border: #d9e2ec;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef2f6 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f766e, #155e75);
+      color: white;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      font-size: 1.02rem;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .chip {
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: white;
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .sidebar .card + .card,
+    .main .card + .card {
+      margin-top: 24px;
+    }
+
+    h2.section-title {
+      margin: 0 0 18px;
+      font-size: 1.15rem;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+
+    .skill-list,
+    .detail-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .skill-list li,
+    .detail-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .skill-list li:last-child,
+    .detail-list li:last-child,
+    .timeline-item:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      display: inline-block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .timeline-item {
+      padding: 0 0 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 4px;
+      font-size: 1.06rem;
+    }
+
+    .timeline-item .meta {
+      color: var(--muted);
+      font-size: 0.94rem;
+      margin-bottom: 8px;
+    }
+
+    .timeline-item ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    .pill-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      background: var(--accent-soft);
+      color: var(--accent);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .education-item strong { display: block; }
+    .education-item span { color: var(--muted); }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 28px 0 10px;
+    }
+
+    @media (max-width: 860px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 28px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>Brandon Galeas</h1>
+      <p>
+        Hardworking and adaptable first-year college student with strong problem-solving skills,
+        teamwork experience, and a passion for learning. Seeking opportunities to contribute to a
+        dynamic team, gain valuable experience, and continue growing personally and professionally.
+      </p>
+      <div class="contact">
+        <span class="chip">Downey, CA</span>
+        <a class="chip" href="tel:+15623028425">(562) 302-8425</a>
+        <a class="chip" href="mailto:714563bg@gmail.com">714563bg@gmail.com</a>
+        <span class="chip">Trilingual: English, Spanish, French</span>
+      </div>
+    </section>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="card">
+          <h2 class="section-title">Core Strengths</h2>
+          <ul class="skill-list">
+            <li>Strong problem-solving abilities</li>
+            <li>Quick learner who adapts well to new environments and challenges</li>
+            <li>Collaborative team player with effective communication skills</li>
+            <li>Hands-on technical and project experience</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Technical Experience</h2>
+          <ul class="detail-list">
+            <li>Coursework in machining and manufacturing processes</li>
+            <li>Experience operating CNC machines, manual mill machines, and manual lathes</li>
+            <li>Basic G-code reading and writing for automated tool control</li>
+            <li>3D modeling with Autodesk Inventor and CAD tools</li>
+            <li>Arduino coding experience for device functionality</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Languages</h2>
+          <div class="pill-wrap">
+            <span class="pill">English</span>
+            <span class="pill">Spanish</span>
+            <span class="pill">French</span>
+          </div>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="card">
+          <h2 class="section-title">Experience & Leadership</h2>
+
+          <article class="timeline-item">
+            <span class="label">Apprenticeship</span>
+            <h3>Engineering &amp; Product Development Apprentice</h3>
+            <div class="meta">Work Wonder Apprenticeship</div>
+            <ul>
+              <li>Collaborated on a team project to design and build an underwater trail camera for monitoring artificial coral reefs.</li>
+              <li>Focused on 3D modeling the camera housing using CAD software.</li>
+              <li>Contributed Arduino code supporting the device’s electronic functionality.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="label">Community Involvement</span>
+            <h3>Key Club Member</h3>
+            <div class="meta">Volunteer Service</div>
+            <ul>
+              <li>Participated in volunteer events focused on improving the local community.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <span class="label">Youth Leadership</span>
+            <h3>Camp Leader</h3>
+            <div class="meta">Saint Dominic Savio Church</div>
+            <ul>
+              <li>Supervised and mentored a group of children during summer camp.</li>
+              <li>Helped create a safe, fun, and educational environment.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Projects</h2>
+          <div class="pill-wrap" style="margin-bottom: 14px;">
+            <span class="pill">Car Inspection &amp; Analysis</span>
+            <span class="pill">Hydrogen Generator Prototype</span>
+            <span class="pill">3D Models in Autodesk Inventor</span>
+          </div>
+          <p style="margin:0; color: var(--muted);">
+            Project work includes automotive analysis, prototype development, and applied 3D design.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2 class="section-title">Education</h2>
+          <div class="education-item">
+            <strong>Downey High School Graduate</strong>
+            <span>Honors Physics • Physics Club Member</span>
+          </div>
+          <div class="education-item" style="margin-top: 16px;">
+            <strong>Cerritos College Automotive Program</strong>
+            <span>Year 2</span>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      Web resume adapted from the uploaded HTML template and populated with content from Brandon Galeas's resume.
+    </footer>
+  </div>
+</body>
+</html>
